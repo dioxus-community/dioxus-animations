@@ -8,6 +8,11 @@ Renderer-agnostic animations library for [Dioxus 🧬](https://dioxuslabs.com).
 
 Contributions are welcomed!
 
+## To Do
+- [ ] Sync fps to platform
+- [ ] Test WASM support
+- [ ] More features
+
 ## Support
 
 - **Dioxus v0.4** 🧬

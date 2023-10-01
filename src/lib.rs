@@ -105,6 +105,7 @@ pub fn use_transition<const N: usize>(
                 let mut running_id = None;
                 while let Some((animation, direction)) = rx.next().await {
                     let mut current_frame: f32 = 0.0;
+                    // TODO: This should be 16ms I think
                     let mut ticker = interval(Duration::from_millis(1));
                     loop {
                         // Stop running this animation if there is a new one scheduled
@@ -117,6 +118,7 @@ pub fn use_transition<const N: usize>(
 
                         // Tick 1ms
                         ticker.tick().await;
+                        // TODO: This should be 16ms I think
                         current_frame += 1.0;
 
                         // Ease the animation value
